@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 80px;
+    text-decoration:underline;
+}
+#logo_container {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
+    margin-top: 30px;
+    
+}
+#btn{
+    text-align: center;
+    width: auot;
+    height: auto;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#straive_logo,#gramener_logo{
+    width: 400px;
+    height: auto;
+}
+#demo-video{
+    margin-top: 40px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+video{
+    width: 50%;
+    height: auto;
+}
+h2{
+    font-size: 50px;
+}
+a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    border: 1px solid black;
+}
