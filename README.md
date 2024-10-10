@@ -1,55 +1,101 @@
-# Uber Price Prediction
+# Uber Price Prediction Full Stack Application
 
-================
+## Project Description
 
-**Predicting Taxi Fares for Uber Inc.**
+This project is designed to develop a predictive model for estimating Uber fare prices accurately. As the largest ride-hailing service globally, Uber generates vast datasets through its daily transactions. By leveraging this data effectively, the goal is to inform better business decisions and optimize customer satisfaction. A key focus of the project is to predict fare prices with high precision, allowing Uber to improve service efficiency.
 
-This project aims to develop a predictive model that accurately estimates fare prices for Uber's future transactions. As the world's largest taxi company, Uber serves millions of customers daily, generating vast amounts of data. Effective data management and analysis are crucial to inform business decisions and drive growth. A key challenge in this context is predicting fare prices with high accuracy, enabling Uber to optimize its services and improve customer satisfaction. This project seeks to address this challenge by leveraging data analytics and machine learning techniques to build a robust fare prediction model, ultimately enhancing Uber's operational efficiency and competitiveness.
+This application includes both a machine learning model for fare prediction and a full-stack web interface where users can book trips by providing details like passenger count, trip distance, vehicle type, and more. The app also supports **CRUD (Create, Read, Update, Delete)** operations for trip data and features automated testing for functionality.
 
 ## Table of Contents
------------------
-- [Uber Price Prediction](#uber-price-prediction)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Contributions](#contributions)
-  - [Acknowledgement](#acknowledgement)
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Tech Stack](#tech-stack)
+- [Contributions](#contributions)
+- [Acknowledgments](#acknowledgments)
+
+---
 
 ## Introduction
-------------
 
-In this project, we are able to perform **Exploratory Data Analysis** on the provided dataset, we performed feature engineering and find out the **KPI parameters** and some insights. After we experimented different regressor models and used the highest accuracy model which predicts the price accurately. If we are given with distance, passenger count and duration the model is able to predict the price efficiently. After that we created a dashboard for finding the filtered data based on the passenger count. In the other dashboard we showed different plots for start_date, end_date and payment-type. We used **streamlit** module for creating dashboards.
+The project encompasses **Exploratory Data Analysis (EDA)**, **Feature Engineering**, and **Predictive Modeling**. By applying various regression models, we identified the one that yields the highest accuracy in predicting Uber fare prices.
+
+The web interface allows customers to book trips by entering information such as the number of passengers, trip distance, pickup/drop locations, and vehicle type. The application connects to a backend that stores trip details in a database and uses a machine learning model (saved in a pickle file) to predict the fare based on the trip parameters.
+
+CRUD operations are integrated into the app, allowing users to manage trip records. We also implemented **unit testing** to ensure the functionality of all CRUD features. Additionally, a **CI/CD pipeline** has been set up for version control and streamlined code deployment.
+
+---
 
 ## Features
-------------
 
-From the dataset the key features are:
+The application includes the following key features:
 
-* Pickup_time and Drop_time
-* Trip_distance
-* Trip_duration
-* Total_amount
-* Passenger_count
-* Payment_type
+- **Pickup and Drop Time**
+- **Trip Distance**
+- **Trip Duration**
+- **Predicted Fare**
+- **Passenger Count**
+- **Vehicle Type**
   
-## Installation
-----------------
-You to need to download this folder in zip format. And to run the files you need to install 
+---
 
-    pip install streamlit
-    pip install plotly
+## Installation
+
+To run the project, follow these steps:
+
+1. Download the project folder as a ZIP file or clone it from the repository.
+2. Install the necessary dependencies:
+
+   ```bash
+   pip install streamlit
+   pip install flask
+   pip install joblib
+   npm install axios
+   ```
+
+3. Ensure the machine learning model (`model.pkl`) is included in the appropriate directory for fare prediction.
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- **React.js**
+- **Node.js**
+
+### Backend
+
+- **Flask**
+- **Express.js**
+
+### Database
+
+- **MongoDB (NoSQL)**
+
+### Testing & CI/CD
+
+- **Unit Testing** (for CRUD operations)
+- **Git** (for version control)
+- **CI/CD pipeline** (for continuous integration and deployment)
+
+---
 
 ## Contributions
------------------
 
-* Deepak   -> Performed EDA Analysis, PPT making
-* Umesh    -> Data Pre-Processing, Dashboard Enhancement
-* Harsha   -> Dashboard making, Data Processing, EDA Analysis
-* Varshith -> ML modelling, Data Preprocessing, PPT making
-* Bhanu    -> PPT making, Data cleaning
+- **Deepak**: EDA, PPT creation, Testing
+- **Umesh**: Data preprocessing, Frontend & Backend development
+- **Harsha**: Model integration, Data processing, Full-stack development
+- **Varshith**: Machine Learning modeling, Data preprocessing, Backend development
+- **Bhanu**: Data cleaning, UI enhancement, PPT creation
 
-## Acknowledgement
---------------------
+---
 
-We acknowledge the contribution of team members and we are grateful to our instructor **Preety singh** who helped and guided us in a progressive manner. 
+## Acknowledgments
+
+We extend our gratitude to our instructor, **Preety Singh**, for her guidance and mentorship throughout the project. We also appreciate the contributions of all team members who helped bring this project to life.
+
+---
+
+This version provides more clarity and readability while maintaining all the critical project information. Let me know if you need further modifications!
