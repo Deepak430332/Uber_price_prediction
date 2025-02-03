@@ -1,0 +1,16 @@
+name: My Custom Action
+
+on: 
+  push:
+    branches:
+      - main # Change it to your default branch for usecase
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: sangeetham.deepak@gramener.com
+        run: echo "Hello, world!"
